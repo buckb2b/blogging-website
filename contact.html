@@ -15,12 +15,13 @@
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="navbar container" id="navbar">
+    <header class="header" id="header">
+
+        <nav class="navbar container">
             <a href="./index.html">
                 <h2 class="logo">Bucksb2b</h2>
             </a>
+
             <div class="menu" id="menu">
                 <ul class="list">
                     <li class="list-item">
@@ -30,38 +31,36 @@
                         <a href="./category.html" class="list-link">Articles</a>
                     </li>
                     <li class="list-item">
-                        <a href="#" class="list-link">Contact</a>
+                        <a href="./contact.html" class="list-link">Contact</a>
                     </li>
                     <li class="list-item screen-lg-hidden">
-                        <a href="./signin.html" class="list-link">Sign in</a>
-                    </li>
-                    <li class="list-item screen-lg-hidden">
-                        <a href="./signup.html" class="list-link">Sign up</a>
+                        <a href="./signup.html" class="list-link">Donate</a>
                     </li>
                 </ul>
             </div>
 
             <div class="list list-right">
-                <div class="icon-box place-items-center" id="theme-toggle-btn">
+                <button class="btn place-items-center" id="theme-toggle-btn">
                     <i class="ri-sun-line sun-icon"></i>
                     <i class="ri-moon-line moon-icon"></i>
-                </div>
+                </button>
 
-                <div class="icon-box place-items-center" id="search-icon">
+                <button class="btn place-items-center" id="search-icon">
                     <i class="ri-search-line"></i>
-                </div>
+                </button>
 
-                <div class="icon-box place-items-center screen-lg-hidden menu-toggle-icon" id="menu-toggle-icon">
+                <button class="btn place-items-center screen-lg-hidden menu-toggle-icon" id="menu-toggle-icon">
                     <i class="ri-menu-3-line open-menu-icon"></i>
                     <i class="ri-close-line close-menu-icon"></i>
-                </div>
+                </button>
 
-                <a href="./signin.html" class="list-link screen-sm-hidden">Sign in</a>
                 <a href="./signup.html" class="btn sign-up-btn fancy-border screen-sm-hidden">
-                    <span>Sign up</span>
+                    <span>Donate</span>
                 </a>
             </div>
+
         </nav>
+
     </header>
 
     <!-- Search -->
