@@ -614,7 +614,7 @@ body.light-theme{
     margin-top: 50px;
 }
 /* Sign Up */
-.signup{
+.donate{
     margin-top: 50px;
 }
 /* Footer */
@@ -872,8 +872,11 @@ body.light-theme{
     }
 
     /* Fancy button animation effect */
-    .btn.fancy-border:hover::before{
+    .btn.fancy-border::before{
         animation: animate_border .75s linear infinite
+    }
+    .headline.fancy-border::before{
+        animation: animate_border 1.3s linear infinite
     }
 
     @keyframes animate_border{
