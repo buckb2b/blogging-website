@@ -609,11 +609,7 @@ body.light-theme{
     margin-bottom: 8rem;
     box-shadow: 10px, 10px;
 }
-/* Sign In */
-.signin{
-    margin-top: 50px;
-}
-/* Sign Up */
+/* Donate Up */
 .donate{
     margin-top: 50px;
 }
@@ -867,7 +863,7 @@ body.light-theme{
         display: block;
     }
 
-    .sign-up-btn{
+    .donate-btn{
         padding: 4px;
     }
 
