@@ -272,8 +272,16 @@ body.light-theme{
 }
 
 /* Featured articles */
+.sidebar{
+    display: none;
+    visibility: hidden;
+}
 .featured-articles{
     padding-block: 2rem;
+}
+.featured-article{
+    display: none;
+    visibility: hidden;
 }
 
 .section-header-offset{
@@ -580,34 +588,40 @@ body.light-theme{
 }
 /* Contact */
 .contact{
-    margin-top: 75px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+.contact .contact-title{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 45px;
+}
+.contact .contactus-grid-wrapper{
+    gap: 11rem;
+}
 
-.contact-title{
-    font-size: var(--font-size-xl);
-    padding: auto;
-    margin-left: 25px;
+
+.contact .contactus-grid-wrapper .info-data-container{
+    position: static;
+    background-color: transparent;
 }
- 
-.contactus-data{
-    padding-block: 2.5rem;
-    width: 425px;
-    border: .1px solid lightgrey;
-    padding: 50px;
-    margin: 20px;
-    background-color: var(--secondary-background-color);
+
+.contact .contactus-grid-wrapper .info-title{
+    text-align: center;
+    justify-items: center;
+    margin-bottom: var(--margin-md);
 }
-.contactus-data-content{
-    position: relative;
-    display: inline-block;
-    grid-row: 3;
-    gap: var(--gap);
-    font-size: var(--font-size-md);
-    margin-bottom: 8rem;
-    box-shadow: 10px, 10px;
+.contact .info .info-description{
+    text-align: center;
+}
+.contact .info .social-items{
+    align-items: center;
+    justify-content: center;
+    margin-left: 85px;
+}
+.contact .info{
+    margin-bottom: 45px;
 }
 /* Donate Up */
 .donate{
@@ -800,6 +814,14 @@ body.light-theme{
         grid-template-rows: 5rem repeat(4, 1fr);
     }
 
+    .sidebar{
+        display: block;
+        visibility: visible;    
+    }
+    .featured-article{
+        display: block;
+        visibility: visible;
+    }
     .headline-banner{
         grid-column: 1/-1;
         font-size: var(--font-size-sm);
@@ -823,6 +845,10 @@ body.light-theme{
         grid-template-columns: 25rem 1fr;
         
     }
+    .contact .info{
+        grid-template-columns: 25rem 1fr;
+        
+    }
 
     .older-posts-article-image-wrapper{
         height: auto;
@@ -831,6 +857,7 @@ body.light-theme{
         grid-template-columns: 25rem 1fr;
         
     }
+
 
     .category-article-image-wrapper{
         height: auto;
@@ -918,6 +945,12 @@ body.light-theme{
     }
     .category-grid-wrapper{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .contactus-grid-wrapper{
+        grid-template-columns: repeat(2, 300px);
+    }
+    .contact .info .info-description{
+        text-align: center;
     }
 }
 @media screen and (min-width: 1500px) {
