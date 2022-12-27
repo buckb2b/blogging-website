@@ -60,3 +60,17 @@ themeToggleBtn.addEventListener('click', function () {
         localStorage.removeItem('currentTheme');
     }
 });
+//Code for email
+function sendEmail(){
+    Email.send({
+        Host : "smtp.gmail.com",
+        Username : "lavanightlights777@gmail.com",
+        Password : "9E15ACE5656EAB85F2D729686DD658E57F0B",
+        To : 'johnpalomino7911@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "New Contact Us Form Inquire",
+        Body : "And this is the body"
+    }).then(
+      message => alert(message)
+    );
+}
